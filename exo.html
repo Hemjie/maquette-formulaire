@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercice formulaire</title>
+    <link rel="stylesheet" href="exo.css">
+</head>
+
+<!-- 
+    reproduuire image formaulaire en responsive elements en dessous des uns des autres
+    attention flex
+    ajouter button avec belle mise en forme au centre en bas
+    deux tailles d'écrans
+    quand on selectionne un champ: bordure doit changer de couleur
+-->
+
+<body>
+    <div class="flexpage">
+        <div class="page">
+            <form action="">
+                <div class="flex">
+
+                    <div class="flex name">
+                        <div class="flex lastname">
+                            <label for="lastname">NOM :</label>
+                            <input type="text" name="lastname" id="lastname">
+                        </div>
+
+                        <div class="flex firstname">
+                            <label for="fisrtname">PRENOM :</label>
+                            <input type="text" name="firstname" id="lastname">
+                        </div>
+                    </div>
+                    
+                    <div class="flex infos">
+                        <div class="flex telephone">
+                            <label for="telephone">TELEPHONE:</label>
+                            <input type="text" name="telephone" id="telephone">
+                        </div>
+
+                        <div class="flex marital-status">
+                            <label for="marital-status">SITUATION: </label>
+                            <select name="marital-status" id="marital-status">
+                                <option value="">Célibataire</option>
+                                <option value="">En couple</option>
+                                <option value="">Marié(e)</option>
+                                <option value="">Divorcé(e)</option>
+                                <option value="">Séparé(e)</option>
+                                <option value="">Veuf(ve)</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="flex infos2">
+                        <div class="flex hobbies">
+                            <label for="hobbies">HOBBIES: </label>
+                            <div class="checkbox">
+                                <div class="checkbox1">
+                                    <input type="checkbox" name="hobbies" id="model">
+                                    <label for="model">Maquette</label>
+                                </div>
+                                <div class="checkbox2">
+                                    <input type="checkbox" name="hobbies" id="cycling">
+                                    <label for="cycling">Cyclisme</label>
+                                </div>
+                                <div class="checkbox3">
+                                    <input type="checkbox" name="hobbies" id="cooking">
+                                    <label for="cooking">Cuisine</label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="flex civility">
+                            <label for="civility">CIVILITE:<label>                        <div class="radio">
+                                <div class="radio1">
+                                    <input type="radio" name="civility" id="mister">
+                                    <label for="mister">Monsieur</label>
+                                </div>
+                                <div class="radio2">
+                                    <input type="radio" name="civility" id="misses">
+                                    <label for="misses">Madame</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="flex button">
+                        <button>Valider</button>
+                    </div>
+
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

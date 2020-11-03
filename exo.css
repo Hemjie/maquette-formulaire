@@ -1,0 +1,112 @@
+.flexpage {
+    display: flex;
+    height: 100vh;
+}
+
+body {
+    background-image: url(autumn.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.page {
+    width: 900px;
+    margin: auto;
+}
+
+form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.name, .infos, .infos2, .button {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 10px;
+}
+
+label {
+    display: block;
+}
+
+input, select {
+    width: 95%;
+    margin-top: 7px;
+    border-radius: 10px;
+    border-width: 1px;
+    height: 25px;
+}
+
+input:focus, select:focus {
+    border-color: #ff0000;
+    outline: 0;
+}
+
+
+.firstname, .lastname, .telephone, .marital-status, .hobbies, .civility {
+    width: 50%;
+    margin-top: 10px;
+}
+
+select {
+    height: 28px;
+    width: 96%;
+    border-width: 1.5px;
+}
+
+.checkbox, .radio {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.checkbox1, .checkbox2, .checkbox3, .radio1, .radio2 {
+    width: 90%;
+    margin: 0;
+}
+
+.checkbox input, .radio input {
+    width: auto;
+    height: auto;
+}
+
+.checkbox label, .radio label {
+    display: inline;
+}
+
+.button {
+    margin-top: 30px;
+    justify-content: center;
+    /* ou text-align: center à préférer pour le responsive */
+}
+
+button {
+    width: 200px;
+    font-size: 20px;
+    background-color: transparent;
+    border: 1px solid #000000;
+    border-radius: 15px;
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: #000000;
+    color: #fff;
+    transition: 0.5s;
+}
+
+@media (max-width: 991px) {
+
+    .page{
+        width: 100%;
+    }
+
+    .firstname, .lastname, .telephone, .marital-status, .hobbies, .civility {
+        width: 95%
+    }
+
+    .button {
+        margin: 30px 40%;
+        justify-content: flex-start;
+    }
+}
